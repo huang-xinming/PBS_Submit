@@ -1,3 +1,4 @@
 Submit,Solver,ver,platform,cpu,job_name,local_path,input,status,job_id,node,remote_path
 pbs,Optistruct,2017,Node-Rack,2,na,na,na,unsubmit,na,na,na
 pbs,Abaqus-smp,6.14,Node-Rack,4,na,na,na,unsubmit,na,na,na
+pbs,Dyna-mpp,r700_s_mpp,Node-Blade-32c,4,na,na,na,unsubmit,na,na,na
