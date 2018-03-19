@@ -488,7 +488,7 @@ proc ::PBSSubmit::Download {} {
 	set remote_path [file join "$pbs_path" "$remote_path"]
 	
 	set opti_pattern [list "*.h3d" "*.out"]
-	set abq_pattern [list "*.mgs" "*.odb"]
+	set abq_pattern [list "*.msg" "*.odb" "*.fil"]
 	set dyna_pattern [list "d3plot*" "message" "binout*" "curveplot_*"]
 	
 	::PBSSubmit::UpdateTxt $::PBSSubmit::txt "Job $job_id Downloading....\n"
