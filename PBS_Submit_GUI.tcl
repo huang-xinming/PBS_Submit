@@ -369,8 +369,14 @@ proc ::PBSSubmit::WriteSubmitInfo {} {
 #   logging....
 proc ::PBSSubmit::ExportandSubmit {} {
 	variable submit_config;
+	
 	#初始化 txt
 	::PBSSubmit::ClearTxt $::PBSSubmit::txt
+	
+	#disable download button
+	$::PBSSubmit::downloadbtn configure -state disabled
+	#enable refresh button
+	$::PBSSubmit::refbtn configure -state normal
 	
 	#从CSV中 初始化 submit_config
 	::PBSSubmit::InitiaSubmitConfig $::PBSSubmit::conf
